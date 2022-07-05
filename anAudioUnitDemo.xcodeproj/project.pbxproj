@@ -13,6 +13,9 @@
 		977F744128744D560043BBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977F743F28744D560043BBEF /* Main.storyboard */; };
 		977F744328744D570043BBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977F744228744D570043BBEF /* Assets.xcassets */; };
 		977F744628744D570043BBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977F744428744D570043BBEF /* LaunchScreen.storyboard */; };
+		977F744F28744F110043BBEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977F744E28744F110043BBEF /* AVFoundation.framework */; };
+		977F745228744F260043BBEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977F745028744F260043BBEF /* AudioToolbox.framework */; };
+		977F7455287450C60043BBEF /* WZAUKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F7454287450C60043BBEF /* WZAUKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		977F744228744D570043BBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977F744528744D570043BBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		977F744728744D570043BBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977F744E28744F110043BBEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		977F745028744F260043BBEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		977F745128744F260043BBEF /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		977F7454287450C60043BBEF /* WZAUKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WZAUKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977F744F28744F110043BBEF /* AVFoundation.framework in Frameworks */,
+				977F745228744F260043BBEF /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				977F743828744D560043BBEF /* anAudioUnitDemo */,
 				977F743728744D560043BBEF /* Products */,
+				977F744D28744F110043BBEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +69,23 @@
 				977F743928744D560043BBEF /* AppDelegate.swift */,
 				977F743B28744D560043BBEF /* SceneDelegate.swift */,
 				977F743D28744D560043BBEF /* ViewController.swift */,
+				977F7454287450C60043BBEF /* WZAUKit.swift */,
 				977F743F28744D560043BBEF /* Main.storyboard */,
 				977F744228744D570043BBEF /* Assets.xcassets */,
 				977F744428744D570043BBEF /* LaunchScreen.storyboard */,
 				977F744728744D570043BBEF /* Info.plist */,
 			);
 			path = anAudioUnitDemo;
+			sourceTree = "<group>";
+		};
+		977F744D28744F110043BBEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				977F745028744F260043BBEF /* AudioToolbox.framework */,
+				977F745128744F260043BBEF /* AudioUnit.framework */,
+				977F744E28744F110043BBEF /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +162,7 @@
 				977F743E28744D560043BBEF /* ViewController.swift in Sources */,
 				977F743A28744D560043BBEF /* AppDelegate.swift in Sources */,
 				977F743C28744D560043BBEF /* SceneDelegate.swift in Sources */,
+				977F7455287450C60043BBEF /* WZAUKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
